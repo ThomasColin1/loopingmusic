@@ -53,3 +53,9 @@ button p{
   top:0px;
   width:55vw;
 }
+#credits{
+  position:absolute;
+  margin:1vw;
+  bottom:0;
+  right:0;
+}

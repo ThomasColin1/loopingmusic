@@ -19,7 +19,7 @@ function App() {
       <button class="c3 l1"><p>F</p></button>
 
       
-
+      <p id="credits">Github : @ThomasColin1</p>
 
     </div>
   );
