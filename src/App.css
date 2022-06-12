@@ -14,12 +14,39 @@ button{
   border: 0px;
 
 }
+button:hover{
+  background-color: rgb(221, 221, 221);
+}
+button:hover{
+  background-color: rgb(221, 221, 221);
+}
 
 button p{
   position:relative;
   bottom:-4.0vw;
   left:-4.0vw;
   font-size: 0.9vw;
+}
+button span{
+  position:absolute;
+  font-size: 1.3vw;
+  font-style: italic;
+  color: #00000088;
+
+  transform: translate3D(-50%, -50%, 0);
+  
+}
+#songTitle{
+  position:relative;
+  font-size: 1.8vw;
+  font-style: none;
+  color: #00000088;
+  margin : 0px;
+
+}
+
+a{
+  text-decoration: none;
 }
 
 .c0{
