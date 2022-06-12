@@ -36,6 +36,13 @@ button span{
   transform: translate3D(-50%, -50%, 0);
   
 }
+button img{
+  position:absolute;
+  height:3vw;
+  width:3vw;
+  transform: translate3d(-50%,50%,0);
+  visibility: hidden;
+}
 #songTitle{
   position:relative;
   font-size: 1.8vw;
@@ -71,7 +78,6 @@ a{
   left:0px;
   top:0px;
   width:100vw;
-  height:100vh;
 }
 #feuille1{
   position:absolute;
@@ -85,4 +91,88 @@ a{
   margin:1vw;
   bottom:0;
   right:0;
+  color: #00000088;
+}
+
+#progressbar {
+  position:absolute;
+  background-color: rgba(0, 0, 0, 0.696);
+  border-radius: 13px;
+  /* (height of inner div) / 2 + padding */
+  padding: 3px;
+  width:50%;
+  top:90%;
+  left:50vw;
+  transform: translateX(-50%);
+  
+}
+
+#progressbar>div {
+  background-color: rgb(42, 186, 90);
+  width: 0%;
+  /* Adjust with JavaScript */
+  height: 20px;
+  border-radius: 10px;
+}
+
+@media (orientation: portrait) {
+
+  button{
+    height:30vw;
+    width: 30vw;
+    border-radius: 3vw;
+  }
+
+  .c0{
+  top:10vh;
+}.c1{
+  top: 30vh;
+}.c2{
+  top:50vh;
+}.c3{
+  top:70vh;
+}
+
+.l0{
+  left:15vw;
+}
+.l1{
+  left:55vw;
+}
+
+button p{
+  display : none;
+}
+button span{
+  font-size: 4vw;
+}
+button img{
+  height:8vw;
+  width:8vw;
+  transform: translate3d(-50%,60%,0);
+}
+#songTitle{
+  font-size: 5vw;
+
+}
+
+#rotateFeuilles{
+  transform: rotateZ(90deg);
+}
+
+#feuille1, #feuille2{
+  height:100vw;
+  width:100vh;
+  left: 50vw;
+  top:-50vw;
+
+  transform: scaleY(-1);
+}
+#feuille1{
+  height:50vw;
+  width:50vh;
+  transform:rotateZ(-180deg);
+  top:0vw;
+}
+
 }
